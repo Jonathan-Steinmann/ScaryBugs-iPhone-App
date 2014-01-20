@@ -13,19 +13,11 @@
 		<string>logo1.png</string>
 	</array>
 	<key>CFBundleIcons</key>
-	<dict>
-		<key>CFBundlePrimaryIcon</key>
-		<dict>
-			<key>CFBundleIconFiles</key>
-			<array>
-				<string>logo1.png</string>
-			</array>
-			<key>UIPrerenderedIcon</key>
-			<false/>
-		</dict>
-	</dict>
+	<dict/>
+	<key>CFBundleIcons~ipad</key>
+	<dict/>
 	<key>CFBundleIdentifier</key>
-	<string>com.razeware.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.cmiwebstudio.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -40,6 +32,8 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSMainNibFile~ipad</key>
+	<string>MainStoryboard-iPad</string>
 	<key>UIMainStoryboardFile</key>
 	<string>MainStoryboard</string>
 	<key>UIRequiredDeviceCapabilities</key>

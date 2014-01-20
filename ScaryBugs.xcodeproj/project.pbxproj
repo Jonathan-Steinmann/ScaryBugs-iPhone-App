@@ -36,6 +36,7 @@
 		3597143C14F2EB8900F11098 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3597143B14F2EB8900F11098 /* Default.png */; };
 		3597143F14F2EDF300F11098 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3597143E14F2EDF300F11098 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3597144114F2EE4500F11098 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3597144014F2EE4500F11098 /* QuartzCore.framework */; };
+		4A138453188D090A00FD373E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A138452188D090A00FD373E /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		3597143D14F2EDF200F11098 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		3597143E14F2EDF300F11098 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		3597144014F2EE4500F11098 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4A138452188D090A00FD373E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,12 +130,14 @@
 		355AFC3714EDC87200031A10 /* ScaryBugs */ = {
 			isa = PBXGroup;
 			children = (
+				4A138451188D08C500FD373E /* iPad */,
 				355AFCB514EEE52100031A10 /* Art */,
 				355AFCAB14EEE4CC00031A10 /* Helpers */,
 				355AFCA614EEE4B900031A10 /* Views */,
 				355AFC5914EDD36E00031A10 /* ScaryBugs */,
 				355AFC5214EDCAD800031A10 /* Model */,
 				355AFC5114EDCA5100031A10 /* GUI */,
+				4A138452188D090A00FD373E /* Images.xcassets */,
 				355AFC3814EDC87200031A10 /* Supporting Files */,
 			);
 			path = ScaryBugs;
@@ -222,6 +226,13 @@
 			name = Art;
 			sourceTree = "<group>";
 		};
+		4A138451188D08C500FD373E /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -249,6 +260,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
+				TargetAttributes = {
+					355AFC2C14EDC87200031A10 = {
+						DevelopmentTeam = Y23KA8V4XN;
+					};
+				};
 			};
 			buildConfigurationList = 355AFC2714EDC87100031A10 /* Build configuration list for PBXProject "ScaryBugs" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -283,6 +299,7 @@
 				355AFC6914EDD36E00031A10 /* potatoBugThumb.jpg in Resources */,
 				355AFC6A14EDD36E00031A10 /* wolfSpider.jpg in Resources */,
 				355AFC6B14EDD36E00031A10 /* wolfSpiderThumb.jpg in Resources */,
+				4A138453188D090A00FD373E /* Images.xcassets in Resources */,
 				355AFCB214EEE50600031A10 /* shockedface2_empty.png in Resources */,
 				355AFCB314EEE50600031A10 /* shockedface2_full.png in Resources */,
 				355AFCB414EEE50600031A10 /* shockedface2_half.png in Resources */,
@@ -380,10 +397,15 @@
 		355AFC4F14EDC87200031A10 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ScaryBugs/ScaryBugs-Prefix.pch";
 				INFOPLIST_FILE = "ScaryBugs/ScaryBugs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,10 +413,15 @@
 		355AFC5014EDC87200031A10 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ScaryBugs/ScaryBugs-Prefix.pch";
 				INFOPLIST_FILE = "ScaryBugs/ScaryBugs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
